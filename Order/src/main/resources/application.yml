@@ -1,0 +1,18 @@
+server:
+  port: 8769
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: microservice-eureka-order
+    #暴露acutator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: microservice-config-cilent
+  cloud:
+    config:
+      profile: prod
+      uri: http://localhost:8888/
+server:
+  port: 8801

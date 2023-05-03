@@ -1,0 +1,7 @@
+Spring:
+  Application:
+    name: microservice-config-server
+  profiles:
+    active: native
+server:
+  port: 8888

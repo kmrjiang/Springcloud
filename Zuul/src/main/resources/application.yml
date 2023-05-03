@@ -1,0 +1,16 @@
+server:
+  port: 8050
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: Zuul
+zuul:
+  routes:
+    order-serviceId:
+      service-id: microservice-eureka-user
+      path: /user/**
+
+
